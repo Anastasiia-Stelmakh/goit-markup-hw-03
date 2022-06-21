@@ -1,0 +1,215 @@
+:root{
+
+    /* fonts */
+    --main-font: Roboto, sans-serif;
+    --secondary-font: Raleway;
+    /* text colors */
+    --light-grey-txt-cl:#757575;
+    --dark-grey-txt-cl: #212121;
+    --black-txt-cl: #000000;
+    --accent-cl: #2196F3;
+    --white-txt-cl: #FFFFFF;
+    /* bg-colors */
+    --main-bg-cl: #FFFFFF;
+    --secondary-bg-cl: #2F303A;
+    --additional-bg-cl: #F5F4FA;
+    /* other */
+}
+
+body{
+    font-family: var(--main-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--main-bg-cl);
+    color:var(--light-grey-txt-cl);   
+   }
+
+   /* Logo style */
+
+.logo{
+    color: var(--black-txt-cl);
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;    
+    word-spacing: 1px;    
+    margin-left: 0;
+}
+.logo-inner{
+    color: var(--accent-cl);
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;      
+    margin-right: 0;
+}
+.logo-footer{
+    color: var(--main-bg-cl);
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.links {
+    text-decoration: none;
+}
+.lists {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+    
+ /* Navigation style */
+.nav{
+    color:var(--dark-grey-txt-cl);         
+    font-weight: 500;    
+    line-height: 1.17;
+    letter-spacing: 0.02em;    
+}
+
+.nav:hover,
+.nav:focus {
+    color: var(--accent-cl);
+}
+.current {
+    color: var(--accent-cl)
+}
+
+ /* Contact style */
+
+.contact-item{      
+    font-weight: 500;    
+    color: var(--light-grey-txt-cl);
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+
+.contact-item:hover,
+.contact-item:focus{
+    color: var(--accent-cl);
+}
+
+/* Hero styles */
+.hero{
+    background-color: var(--secondary-bg-cl);
+}
+.hero-title{    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--main-bg-cl);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.order{    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;    
+    background-color: var(--accent-cl);
+    color:var(--main-bg-cl);
+    border: none;
+    cursor: pointer; 
+    letter-spacing: 0.06em;
+}
+
+/* Benefits style */
+
+.benefits-title{
+font-size: 14px;
+line-height: 1.17;
+color: var(--dark-grey-txt-cl);
+text-transform: uppercase;
+}
+.benefits-text{   
+    line-height: 1.71;        
+}
+/* Секція чим ми займаємось */
+
+.section-title{        
+    font-size: 36px;
+    line-height: 1.71;
+    color: var(--dark-grey-txt-cl);    
+}
+
+/* Team styles */
+
+.image-title{    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--dark-grey-txt-cl);    
+}
+.image-text{    
+    font-size: 16px;
+    line-height: 1.17;       
+}
+
+/* Footer styles */
+.footer{
+    background-color: var(--secondary-bg-cl);
+    color: var(--main-bg-cl);    
+}
+
+.footer-address {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--main-bg-cl);
+}
+.footer-link{    
+    font-style: normal;    
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);;    
+}
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-cl)
+}
+
+/* Button portfolio styles */
+.button-list{
+    text-decoration: none;
+    list-style: none;
+}
+.button{
+    color: var(--dark-grey-txt-cl);
+    background-color: var(--additional-bg-cl);
+    padding: 6px 22px;     
+    line-height: 1.6;
+    border-radius: 4px;
+    border: none;     
+    font-family: inherit;
+    font-weight: 500;  
+    font-size: 16px;    
+    cursor: pointer;
+}
+.button:hover,
+.button:focus {
+    background-color: var(--accent-cl);
+    color: var(--white-txt-cl);    
+}
+
+/* Image portfolio styles */
+.pic-title {    
+    font-size: 18px;
+    line-height: 2;
+    color: var(--black-txt-cl);
+    letter-spacing: 0.06em;
+}
+.pic-text{    
+    font-size: 16px;    
+    line-height: 1.88;        
+}
