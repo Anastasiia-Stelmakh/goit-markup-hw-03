@@ -401,6 +401,10 @@ ul {
   width: calc((100% - 90) / 3);
 }
 
+.pic-list:nth-child(n + 6) {
+  margin-bottom: 0;
+}
+
 .portfolio-text {
   border-top: none;
   border-right: 1px solid #eeeeee;
