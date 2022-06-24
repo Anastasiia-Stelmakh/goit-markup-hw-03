@@ -23,6 +23,17 @@ body {
   color: var(--light-grey-txt-cl);
 }
 
+/* reset */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
@@ -41,8 +52,16 @@ img {
 }
 
 /* Класс для обнуления базовых свойств у ссылок */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 .links {
   text-decoration: none;
+  color: inherit;
 }
 
 /* Класс для обнуления базовых свойств у списков */
@@ -311,6 +330,7 @@ img {
   line-height: 1.71;
   color: var(--main-bg-cl);
 }
+
 .footer-link {
   font-style: normal;
   line-height: 1.71;
@@ -319,6 +339,11 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-cl);
+}
+
+.footer-mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 /* Button portfolio styles */
@@ -354,26 +379,26 @@ img {
   color: var(--white-txt-cl);
 }
 
+.current-button {
+  background-color: var(--accent-cl);
+  color: var(--white-txt-cl);
+}
+
 /* Image portfolio styles */
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  text-align: center;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .pic-list {
   flex-basis: 370px;
   margin-right: 30px;
-}
-
-pic-list:nth-child(3n) {
-  margin-right: 0;
-}
-
-.pic-list:nth-child(-n + 6) {
   margin-bottom: 30px;
+  width: calc((100% - 90) / 3);
 }
 
 .portfolio-text {
