@@ -12,6 +12,7 @@
   --main-bg-cl: #ffffff;
   --secondary-bg-cl: #2f303a;
   --additional-bg-cl: #f5f4fa;
+  --header-border-cl: #ECECEC;
   /* other */
 }
 
@@ -108,6 +109,10 @@ ul {
   padding-bottom: 94px;
 }
 
+.header {
+    border: 1px solid var(--header-border-cl)
+}
+
 /* Logo style */
 .logo {
   color: var(--black-txt-cl);
@@ -120,6 +125,7 @@ ul {
   margin-left: 0;
   margin-right: 93px;
 }
+
 .logo-inner {
   color: var(--accent-cl);
   text-decoration: none;
@@ -206,7 +212,6 @@ ul {
   letter-spacing: 0.06em;
 
   text-align: center;
-  /* margin-top: 200px; */
   margin-bottom: 30px;
   width: 696px;
   margin-left: auto;
@@ -227,7 +232,6 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 30px;
-  /* margin-bottom: 200px; */
 }
 
 /* Benefits style */
@@ -401,15 +405,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .pic-list {
-  flex-basis: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100% - 90) / 3);
 }
 
 .pic-list:nth-child(3n + 3) {
