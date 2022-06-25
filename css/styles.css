@@ -194,6 +194,8 @@ ul {
 .hero {
   background-color: var(--secondary-bg-cl);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -204,7 +206,7 @@ ul {
   letter-spacing: 0.06em;
 
   text-align: center;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   margin-bottom: 30px;
   width: 696px;
   margin-left: auto;
@@ -225,7 +227,7 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 30px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 /* Benefits style */
@@ -304,13 +306,11 @@ ul {
   font-size: 16px;
   line-height: 1.17;
   color: var(--dark-grey-txt-cl);
-  /* margin-top: 30px; */
   margin-bottom: 10px;
 }
 .image-text {
   font-size: 16px;
   line-height: 1.17;
-  /* padding-bottom: 30px; */
 }
 
 .team-box {
