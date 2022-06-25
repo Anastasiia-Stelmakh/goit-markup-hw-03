@@ -93,7 +93,7 @@ ul {
   padding-right: 15px;
 }
 
-.header-nav {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -181,6 +181,9 @@ ul {
   color: var(--light-grey-txt-cl);
   line-height: 1.17;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .contact-item:hover,
 .contact-item:focus {
@@ -201,8 +204,11 @@ ul {
   letter-spacing: 0.06em;
 
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-top: 200px;
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .order {
   font-family: inherit;
@@ -231,7 +237,6 @@ ul {
 
 .benefits-item {
   width: 270px;
-  justify-content: space-between;
 }
 
 .benefits-item:not(:last-child) {
@@ -299,12 +304,17 @@ ul {
   font-size: 16px;
   line-height: 1.17;
   color: var(--dark-grey-txt-cl);
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 10px;
 }
 .image-text {
   font-size: 16px;
   line-height: 1.17;
+  /* padding-bottom: 30px; */
+}
+
+.team-box {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -312,6 +322,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: white;
 }
 
 /* Footer styles */
@@ -319,16 +330,21 @@ ul {
   background-color: var(--secondary-bg-cl);
   color: var(--main-bg-cl);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-list {
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-top: 20px;
 }
 .footer-address {
   font-style: normal;
   line-height: 1.71;
   color: var(--main-bg-cl);
+}
+
+.footer-mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-link {
@@ -339,11 +355,6 @@ ul {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-cl);
-}
-
-.footer-mail {
-  margin-top: 9px;
-  margin-bottom: 9px;
 }
 
 /* Button portfolio styles */
@@ -401,6 +412,10 @@ ul {
   width: calc((100% - 90) / 3);
 }
 
+.pic-list:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
 .pic-list:nth-child(n + 6) {
   margin-bottom: 0;
 }
@@ -410,6 +425,7 @@ ul {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .pic-title {
@@ -417,12 +433,10 @@ ul {
   line-height: 2;
   color: var(--black-txt-cl);
   letter-spacing: 0.06em;
-  padding-top: 20px;
   margin-bottom: 4px;
 }
 
 .pic-text {
   font-size: 16px;
   line-height: 1.88;
-  margin-bottom: 20px;
 }
